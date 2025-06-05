@@ -31,7 +31,7 @@ json_keyfile = 'credentials.json'
 scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
 credentials = ServiceAccountCredentials.from_json_keyfile_name(json_keyfile, scope)
 client = gspread.authorize(credentials)
-sheet = client.open('Trades').worksheet('Sheet5')
+sheet = client.open('Table name').worksheet('Sheet name')
 
 BASE_URL = "https://www.okx.com"
 
